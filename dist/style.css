@@ -1,0 +1,129 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove default list styling */
+:is(ul, ol) {
+  list-style-type: "";
+}
+
+/* Increase default line-height*/
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Avoid orphans on paragraphs */
+p {
+  text-wrap: pretty;
+}
+
+/* Remove default link styling */
+a {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body {
+  background-color: var(--clr-primary-200);
+}
+
+/* FONTS */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/inter-v18-latin-700.woff2") format("woff2");
+}
+/* CUSTOM PROPERTIES */
+:root {
+  /* Primitive properties */
+  --clr-lime-green: hsl(163, 72%, 41%);
+  --clr-bright-red: hsl(356, 69%, 56%);
+  --clr-blue: hsl(208, 92%, 53%);
+  --clr-light-blue: hsl(203, 89%, 53%);
+  --clr-light-red: hsl(348, 97%, 39%);
+  --clr-light-orange: hsl(37, 97%, 70%);
+  --clr-pink: hsl(329, 70%, 58%);
+  --clr-light-green: hsl(146, 68%, 55%);
+  --clr-desaturated-purple: hsl(230, 22%, 74%);
+  --clr-very-dark-blue1: hsl(230, 17%, 14%);
+  --clr-very-dark-blue2: hsl(232, 19%, 15%);
+  --clr-dark-desaturated-blue: hsl(228, 28%, 20%);
+  --clr-desaturated-blue: hsl(228, 34%, 66%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-very-pale-blue: hsl(225, 100%, 98%);
+  --clr-light-grayish-blue: hsl(227, 47%, 96%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 44%);
+  --clr-very-dark-blue3: hsl(230, 17%, 14%);
+  --ff-sans-serif: "Inter", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  /* Semantic properties */
+  --clr-primary-100: var(--clr-whitewhite);
+  --clr-primary-200: var(--clr-lime-greenlime-green);
+  --clr-primary-300: var(--clr-bright-red);
+}/*# sourceMappingURL=style.css.map */
