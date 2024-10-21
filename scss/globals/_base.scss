@@ -1,7 +1,10 @@
 
-@use '/scss/globals/variables' as vars;
+
 /* BASE STYLES */
 
 body {
+    --body-bg: var(--clr-primary-100);
+    background-color: var(--body-bg);
     font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
 }

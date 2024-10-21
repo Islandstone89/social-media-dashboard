@@ -32,6 +32,21 @@
     --fw-400: 400;
     --fw-700: 700;
 
+    --fs-14px: .875rem;
+    --fs-16px: 1rem;
+    --fs-24px: 1.5rem;
+    --fs-28px: 1.75rem;
+    --fs-32px: 2rem;
+    --fs-56px: 3.5rem;
+
+    --space-16px: 16px;
+    --space-24px: 24px;
+    --space-28px: 28px;
+    --space-32px: 32px;
+    --space-40px: 40px;
+    --space-48px: 48px;
+
+    
     /* Semantic properties */
 
     --clr-primary-100: var(--clr-white);
@@ -57,4 +72,18 @@
     --ff-primary: var(--ff-sans-serif);
     --fw-regular: var(--fw-400);
     --fw-bold: var(--fw-700);
+
+    --fs-100: var(--fs-14px);
+    --fs-200: var(--fs-16px);
+    --fs-300: var(--fs-24px);
+    --fs-400: var(--fs-28px);
+    --fs-500: var(--fs-32px);
+    --fs-600: var(--fs-56px);
+
+    --space-100: var(--space-16px);
+    --space-200: var(--space-24px);
+    --space-300: var(--space-28px);
+    --space-400: var(--space-32px);
+    --space-500: var(--space-40px);
+    --space-600: var(--space-48px);
 }

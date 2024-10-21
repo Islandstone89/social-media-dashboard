@@ -79,10 +79,6 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-body {
-  background-color: var(--clr-primary-200);
-}
-
 /* FONTS */
 @font-face {
   font-display: swap;
@@ -102,10 +98,10 @@ body {
 :root {
   /* Primitive properties */
   --clr-lime-green: hsl(163, 72%, 41%);
-  --clr-bright-red: hsl(356, 69%, 56%);
+  --clr-light-red: hsl(356, 69%, 56%);
   --clr-blue: hsl(208, 92%, 53%);
   --clr-light-blue: hsl(203, 89%, 53%);
-  --clr-light-red: hsl(348, 97%, 39%);
+  --clr-red: hsl(348, 97%, 39%);
   --clr-light-orange: hsl(37, 97%, 70%);
   --clr-pink: hsl(329, 70%, 58%);
   --clr-light-green: hsl(146, 68%, 55%);
@@ -122,8 +118,67 @@ body {
   --ff-sans-serif: "Inter", sans-serif;
   --fw-400: 400;
   --fw-700: 700;
+  --fs-14px: .875rem;
+  --fs-16px: 1rem;
+  --fs-24px: 1.5rem;
+  --fs-28px: 1.75rem;
+  --fs-32px: 2rem;
+  --fs-56px: 3.5rem;
+  --space-16px: 16px;
+  --space-24px: 24px;
+  --space-28px: 28px;
+  --space-32px: 32px;
+  --space-40px: 40px;
+  --space-48px: 48px;
   /* Semantic properties */
-  --clr-primary-100: var(--clr-whitewhite);
-  --clr-primary-200: var(--clr-lime-greenlime-green);
-  --clr-primary-300: var(--clr-bright-red);
+  --clr-primary-100: var(--clr-white);
+  --clr-primary-200: var(--clr-lime-green);
+  --clr-primary-300: var(--clr-light-red);
+  --clr-primary-400: var(--clr-red);
+  --clr-primary-500: var(--clr-pink);
+  --clr-primary-600: var(--clr-light-orange);
+  --clr-primary-700: var(--clr-light-blue);
+  --clr-primary-800: var(--clr-blue);
+  --clr-primary-900: var(--clr-light-green);
+  --clr-primary-1000: var(--clr-desaturated-purple);
+  ---clr-neutral-100: var(--clr-very-dark-blue1);
+  ---clr-neutral-200: var(--clr-very-dark-blue2);
+  ---clr-neutral-300: var(--clr-very-dark-blue3);
+  ---clr-neutral-400: var(--clr-desaturated-blue);
+  ---clr-neutral-500: var(--clr-dark-desaturated-blue);
+  ---clr-neutral-600: var(--clr-very-pale-blue);
+  ---clr-neutral-700: var(--clr-light-grayish-blue);
+  ---clr-neutral-800: var(--clr-dark-grayish-blue);
+  --ff-primary: var(--ff-sans-serif);
+  --fw-regular: var(--fw-400);
+  --fw-bold: var(--fw-700);
+  --fs-100: var(--fs-14px);
+  --fs-200: var(--fs-16px);
+  --fs-300: var(--fs-24px);
+  --fs-400: var(--fs-28px);
+  --fs-500: var(--fs-32px);
+  --fs-600: var(--fs-56px);
+  --space-100: var(--space-16px);
+  --space-200: var(--space-24px);
+  --space-300: var(--space-28px);
+  --space-400: var(--space-32px);
+  --space-500: var(--space-40px);
+  --space-600: var(--space-48px);
+}
+
+/* UTILITIES */
+.flow {
+  --flow-space: var(--space-100);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+/* BASE STYLES */
+body {
+  --body-bg: var(--clr-primary-100);
+  background-color: var(--body-bg);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
 }/*# sourceMappingURL=style.css.map */
