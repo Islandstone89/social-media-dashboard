@@ -39,6 +39,8 @@
     --fs-32px: 2rem;
     --fs-56px: 3.5rem;
 
+    --space-6px: 6px;
+    --space-8px: 8px;
     --space-16px: 16px;
     --space-24px: 24px;
     --space-28px: 28px;
@@ -80,10 +82,12 @@
     --fs-500: var(--fs-32px);
     --fs-600: var(--fs-56px);
 
-    --space-100: var(--space-16px);
-    --space-200: var(--space-24px);
-    --space-300: var(--space-28px);
-    --space-400: var(--space-32px);
-    --space-500: var(--space-40px);
-    --space-600: var(--space-48px);
+    --space-100: var(--space-6px);
+    --space-200: var(--space-8px);
+    --space-300: var(--space-16px);
+    --space-400: var(--space-24px);
+    --space-500: var(--space-28px);
+    --space-600: var(--space-32px);
+    --space-700: var(--space-40px);
+    --space-800: var(--space-48px);
 }

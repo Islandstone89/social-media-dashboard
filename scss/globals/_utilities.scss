@@ -1,8 +1,21 @@
 
 /* UTILITIES */
 
+$breakpoints: (
+    "medium": 43.75rem,
+    "large": 56.25rem,
+    "xlarge": 68.75rem,
+    "xxlarge": 90rem,
+);
+
+@mixin breakpoint($size) {
+    @media (width > map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+
 .flow {
-    --flow-space: var(--space-100);
+    --flow-space: var(--space-400);
 }
 
 .flow > * + * {

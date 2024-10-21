@@ -1,5 +1,4 @@
 
-
 /* BASE STYLES */
 
 body {
@@ -19,4 +18,19 @@ body:has(.theme-toggle:checked) {
 
 [data-growth="negative"] {
     color: var(--clr-primary-300);
+}
+
+.main {
+    --max-width: 1000px;
+    width: min(100% - 40px, var(--max-width));
+    margin-inline: auto;
+    outline: 2px solid darkgreen;
+}
+
+:is(.social-media-handle, .growth__text, .overview__item__growth) {
+    font-size: var(--fs-100);
+}
+
+span {
+    display: block;
 }
