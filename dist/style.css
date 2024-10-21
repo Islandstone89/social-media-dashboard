@@ -141,14 +141,14 @@ textarea:not([rows]) {
   --clr-primary-800: var(--clr-blue);
   --clr-primary-900: var(--clr-light-green);
   --clr-primary-1000: var(--clr-desaturated-purple);
-  ---clr-neutral-100: var(--clr-very-dark-blue1);
-  ---clr-neutral-200: var(--clr-very-dark-blue2);
-  ---clr-neutral-300: var(--clr-very-dark-blue3);
-  ---clr-neutral-400: var(--clr-desaturated-blue);
-  ---clr-neutral-500: var(--clr-dark-desaturated-blue);
-  ---clr-neutral-600: var(--clr-very-pale-blue);
-  ---clr-neutral-700: var(--clr-light-grayish-blue);
-  ---clr-neutral-800: var(--clr-dark-grayish-blue);
+  --clr-neutral-100: var(--clr-very-dark-blue1);
+  --clr-neutral-200: var(--clr-very-dark-blue2);
+  --clr-neutral-300: var(--clr-very-dark-blue3);
+  --clr-neutral-400: var(--clr-desaturated-blue);
+  --clr-neutral-500: var(--clr-dark-desaturated-blue);
+  --clr-neutral-600: var(--clr-very-pale-blue);
+  --clr-neutral-700: var(--clr-light-grayish-blue);
+  --clr-neutral-800: var(--clr-dark-grayish-blue);
   --ff-primary: var(--ff-sans-serif);
   --fw-regular: var(--fw-400);
   --fw-bold: var(--fw-700);
@@ -181,4 +181,16 @@ body {
   background-color: var(--body-bg);
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
+}
+
+body:has(.theme-toggle:checked) {
+  --body-bg: var(--clr-neutral-100);
+}
+
+[data-growth=positive] {
+  color: var(--clr-primary-200);
+}
+
+[data-growth=negative] {
+  color: var(--clr-primary-300);
 }/*# sourceMappingURL=style.css.map */

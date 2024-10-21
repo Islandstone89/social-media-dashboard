@@ -8,3 +8,15 @@ body {
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
 }
+
+body:has(.theme-toggle:checked) {
+    --body-bg: var(--clr-neutral-100);
+}
+
+[data-growth="positive"] {
+    color: var(--clr-primary-200);
+}
+
+[data-growth="negative"] {
+    color: var(--clr-primary-300);
+}
