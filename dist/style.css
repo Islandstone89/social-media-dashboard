@@ -251,7 +251,7 @@ span {
   border-radius: 5px;
   overflow: hidden;
   border-top-style: solid;
-  border-top-width: 1px;
+  border-top-width: 4px;
   padding-block-start: var(--space-600);
   padding-block-end: var(--space-400);
   text-align: center;
@@ -292,21 +292,21 @@ span {
   gap: var(--space-100);
 }
 
-.wrapper {
-  --min-item-width: 250px;
+.overview__items__wrapper {
+  --min-item-width: 275px;
   --grid-gap: var(--space-300);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-item-width)), 1fr));
   gap: var(--grid-gap);
 }
 @media (width > 56.25rem) {
-  .wrapper {
+  .overview__items__wrapper {
     --grid-gap: var(--space-600);
   }
 }
 
 .overview__item {
-  background-color: red;
+  background-color: var(--clr-neutral-700);
 }
 
 .number {

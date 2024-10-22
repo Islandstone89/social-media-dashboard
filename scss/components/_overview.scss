@@ -1,8 +1,8 @@
 
 @use '../globals/utilities' as util;
 
-.wrapper {
-    --min-item-width: 250px;
+.overview__items__wrapper {
+    --min-item-width: 275px;
     --grid-gap: var(--space-300);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-item-width)), 1fr));
@@ -14,7 +14,7 @@
 }
 
 .overview__item {
-    background-color: red;
+    background-color: var(--clr-neutral-700);
 }
 
 .number {
