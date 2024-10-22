@@ -200,7 +200,7 @@ body:has(.theme-toggle:checked) {
 }
 
 .main {
-  --max-width: 1000px;
+  --max-width: 1200px;
   width: min(100% - 40px, var(--max-width));
   margin-inline: auto;
   outline: 2px solid darkgreen;
@@ -292,12 +292,17 @@ span {
   gap: var(--space-100);
 }
 
-.overview__items {
-  --min-item-width: 300px;
-  --grid-row-gap: var(--space-300);
+.wrapper {
+  --min-item-width: 250px;
+  --grid-gap: var(--space-300);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-item-width)), 1fr));
-  gap: var(--grid-row-gap);
+  gap: var(--grid-gap);
+}
+@media (width > 56.25rem) {
+  .wrapper {
+    --grid-gap: var(--space-600);
+  }
 }
 
 .overview__item {

@@ -1,4 +1,6 @@
 
+@use '../globals/utilities' as util;
+
 .dashboard-item {
     display: flex;
     flex-direction: column;
