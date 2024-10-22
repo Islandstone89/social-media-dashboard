@@ -3,13 +3,16 @@
 
 body {
     --body-bg: var(--clr-primary-100);
+    --text-color: var(--clr-neutral-800);
     background-color: var(--body-bg);
+    color: var(--text-color);
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
 }
 
 body:has(.theme-toggle:checked) {
     --body-bg: var(--clr-neutral-100);
+    --text-color: var(--clr-neutral-400);
 }
 
 [data-growth="positive"] {

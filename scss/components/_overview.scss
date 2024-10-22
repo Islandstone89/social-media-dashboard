@@ -2,7 +2,7 @@
 @use '../globals/utilities' as util;
 
 .overview__items__wrapper {
-    --min-item-width: 275px;
+    --min-item-width: 250px;
     --grid-gap: var(--space-300);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-item-width)), 1fr));
@@ -14,9 +14,28 @@
 }
 
 .overview__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-300);
     background-color: var(--clr-neutral-700);
+    padding: var(--space-500);
 }
 
 .number {
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
+    color: var(--clr-neutral-100);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-400);
+}
+
+.growth-percentage {
+    display: flex;
+    align-items: center;
+    gap: var(--space-100);
 }
