@@ -1,6 +1,14 @@
 
 @use '../globals/utilities' as util;
 
+.overview {
+    --flow-space: var(--space-800);
+}
+
+.overview__heading {
+    color: var(--text-color2);
+}
+
 .overview__items__wrapper {
     --min-item-width: 250px;
     --grid-gap: var(--space-300);
@@ -9,7 +17,7 @@
     gap: var(--grid-gap);
 
     @include util.breakpoint(large) {
-        --grid-gap: var(--space-600);
+        --grid-gap: var(--space-500);
     }
 }
 
@@ -18,13 +26,13 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--space-300);
-    background-color: var(--clr-neutral-700);
+    background-color: var(--item-bg);
     padding: var(--space-500);
 }
 
 .number {
     font-size: var(--fs-500);
-    color: var(--clr-neutral-100);
+    color: var(--text-color2);
 }
 
 .column {

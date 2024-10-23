@@ -47,8 +47,8 @@
     --space-32px: 32px;
     --space-40px: 40px;
     --space-48px: 48px;
+    --space-64px: 64px;
 
-    
     /* Semantic properties */
 
     --clr-primary-100: var(--clr-white);
@@ -90,4 +90,5 @@
     --space-600: var(--space-32px);
     --space-700: var(--space-40px);
     --space-800: var(--space-48px);
+    --space-900: var(--space-64px);
 }
