@@ -361,6 +361,10 @@ span {
   gap: var(--space-400);
 }
 
+.column-2 {
+  align-items: center;
+}
+
 .growth-percentage {
   display: flex;
   align-items: center;
