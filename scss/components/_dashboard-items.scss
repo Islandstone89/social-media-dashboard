@@ -43,6 +43,11 @@
     border-top-color: var(--clr-accent-200);
 }
 
+[data-platform="instagram"] {
+    border-top-color: transparent;
+    border-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400)) 1;
+}
+
 [data-platform="youtube"] {
     border-top-color: var(--clr-accent-500);
 }
