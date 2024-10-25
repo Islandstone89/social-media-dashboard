@@ -28,6 +28,7 @@
     padding-block-end: var(--space-400);
     text-align: center;
     background-color: var(--item-bg);
+    transition: 150ms ease-in-out;
 
     &:is(:hover, :focus-visible) {
         background-color: var(--item-bg-hover);
