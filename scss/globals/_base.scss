@@ -2,10 +2,11 @@
 /* BASE STYLES */
 
 body {
-    --body-bg: var(--clr-primary-100);
-    --text-color1: var(--clr-neutral-800);
-    --text-color2: var(--clr-neutral-100);
-    --item-bg: var(--clr-neutral-700);
+    --body-bg: var(--clr-neutral-100);
+    --text-color1: var(--clr-primary-500);
+    --text-color2: var(--clr-primary-600);
+    --item-bg: var(--clr-neutral-300);
+    --item-bg-hover: var(--clr-neutral-400);
     background-color: var(--body-bg);
     color: var(--text-color1);
     font-family: var(--ff-primary);
@@ -13,10 +14,11 @@ body {
 }
 
 body:has(.theme-toggle:checked) {
-    --body-bg: var(--clr-neutral-100);
-    --text-color1: var(--clr-neutral-400);
+    --body-bg: var(--clr-neutral-800);
+    --text-color1: var(--clr-primary-400);
     --text-color2: var(--clr-primary-100);
-    --item-bg: var(--clr-neutral-500);
+    --item-bg: var(--clr-neutral-600);
+    --item-bg-hover: var(--clr-neutral-500);
 }
 
 [data-growth="positive"] {

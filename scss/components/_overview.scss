@@ -28,6 +28,10 @@
     gap: var(--space-300);
     background-color: var(--item-bg);
     padding: var(--space-500);
+
+    &:is(:hover, :focus-visible) {
+        background-color: var(--item-bg-hover);
+    }
 }
 
 .number {

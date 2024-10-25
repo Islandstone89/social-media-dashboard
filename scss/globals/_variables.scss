@@ -15,19 +15,24 @@
 
     --clr-light-green: hsl(146, 68%, 55%);
 
-    --clr-desaturated-purple: hsl(230, 22%, 74%);
+    --clr-desaturated-light-purple: hsl(230, 2%, 74%);
 
     --clr-very-dark-blue1: hsl(230, 17%, 14%);
     --clr-very-dark-blue2: hsl(232, 19%, 15%);
-    --clr-dark-desaturated-blue: hsl(228, 28%, 20%);
-    --clr-desaturated-blue: hsl(228, 34%, 66%);
+
+    --clr-dark-desaturated-blue1: hsl(228, 28%, 20%);
+    --clr-dark-desaturated-blue2: hsl(228, 25%, 27%);
+
+    --clr-desaturated-purple: hsl(228, 34%, 66%);
     --clr-white: hsl(0, 0%, 100%);
 
     --clr-very-pale-blue: hsl(225, 100%, 98%);
-    --clr-light-grayish-blue: hsl(227, 47%, 96%);
-    --clr-dark-grayish-blue: hsl(228, 12%, 44%);
-    --clr-very-dark-blue3: hsl(230, 17%, 14%);
+    --clr-light-grayish-blue1: hsl(227, 47%, 96%);
+    --clr-light-grayish-blue2: hsl(228 33 91%);
 
+    --clr-dark-grayish-blue: hsl(231, 12%, 44%);
+
+    
     --ff-sans-serif: 'Inter', sans-serif;
     --fw-400: 400;
     --fw-700: 700;
@@ -51,25 +56,32 @@
 
     /* Semantic properties */
 
-    --clr-primary-100: var(--clr-white);
-    --clr-primary-200: var(--clr-lime-green);
-    --clr-primary-300: var(--clr-light-red);
-    --clr-primary-400: var(--clr-red);
-    --clr-primary-500: var(--clr-pink);
-    --clr-primary-600: var(--clr-light-orange);
-    --clr-primary-700: var(--clr-light-blue);
-    --clr-primary-800: var(--clr-blue);
-    --clr-primary-900: var(--clr-light-green);
-    --clr-primary-1000: var(--clr-desaturated-purple);
+    /* COLORS */
 
-    --clr-neutral-100: var(--clr-very-dark-blue1);
-    --clr-neutral-200: var(--clr-very-dark-blue2);
-    --clr-neutral-300: var(--clr-very-dark-blue3);
-    --clr-neutral-400: var(--clr-desaturated-blue);
-    --clr-neutral-500: var(--clr-dark-desaturated-blue);
-    --clr-neutral-600: var(--clr-very-pale-blue);
-    --clr-neutral-700: var(--clr-light-grayish-blue);
-    --clr-neutral-800: var(--clr-dark-grayish-blue);
+    --clr-primary-100: var(--clr-white); /* Dark theme - numbers */
+    --clr-primary-200: var(--clr-lime-green); /* Positive growth */
+    --clr-primary-300: var(--clr-light-red); /* Negative growth */
+    --clr-primary-400: var(--clr-desaturated-purple); /* Dark theme -  body text */
+    --clr-primary-500: var(--clr-dark-grayish-blue); /* Light theme - body text */
+    --clr-primary-600: var(--clr-very-dark-blue1); /* Light theme - numbers */
+
+    --clr-neutral-100: var(--clr-white); /* Light theme - Body bg */
+    --clr-neutral-200: var(--clr-very-pale-blue); /* Light theme - top bg */
+    --clr-neutral-300: var(--clr-light-grayish-blue1); /* Light theme - item bg */
+    --clr-neutral-400: var(--clr-light-grayish-blue2); /* Light theme - item bg hover */
+    --clr-neutral-500: var(--clr-dark-desaturated-blue2); /* Dark theme - item bg hover */
+    --clr-neutral-600: var(--clr-dark-desaturated-blue1); /* Dark theme - item bg */
+    --clr-neutral-700: var(--clr-very-dark-blue2); /* Dark theme - top bg */
+    --clr-neutral-800: var(--clr-very-dark-blue1); /* Dark theme - body bg */
+
+    --clr-accent-100: var(--clr-blue); /* Facebook */
+    --clr-accent-200: var(--clr-light-blue); /* Twitter */
+    --clr-accent-300: var(--clr-light-orange); /* Instagram 1 */
+    --clr-accent-400: var(--clr-pink); /* Instagram 2 */
+    --clr-accent-500: var(--clr-red); /* YouTube */
+
+
+    /* TYPOGRAPHY*/
 
     --ff-primary: var(--ff-sans-serif);
     --fw-regular: var(--fw-400);
@@ -81,6 +93,9 @@
     --fs-400: var(--fs-28px);
     --fs-500: var(--fs-32px);
     --fs-600: var(--fs-56px);
+
+
+    /* SPACING */
 
     --space-100: var(--space-6px);
     --space-200: var(--space-8px);

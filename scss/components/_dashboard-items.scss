@@ -28,18 +28,22 @@
     padding-block-end: var(--space-400);
     text-align: center;
     background-color: var(--item-bg);
+
+    &:is(:hover, :focus-visible) {
+        background-color: var(--item-bg-hover);
+    }
 }
 
 [data-platform="facebook"] {
-    border-top-color: var(--clr-primary-800);
+    border-top-color: var(--clr-accent-100);
 }
 
 [data-platform="twitter"] {
-    border-top-color: var(--clr-primary-700);
+    border-top-color: var(--clr-accent-200);
 }
 
 [data-platform="youtube"] {
-    border-top-color: var(--clr-primary-400);
+    border-top-color: var(--clr-accent-500);
 }
 
 .dashboard-item__heading {
