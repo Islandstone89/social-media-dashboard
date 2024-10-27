@@ -303,9 +303,15 @@ span {
 }
 
 [data-platform=instagram] {
-  border-top-color: transparent;
-  -o-border-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400)) 1;
-     border-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400)) 1;
+  border: transparent;
+  position: relative;
+}
+[data-platform=instagram]::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  height: 4px;
+  background-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400));
 }
 
 [data-platform=youtube] {

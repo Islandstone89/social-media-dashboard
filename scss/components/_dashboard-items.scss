@@ -44,8 +44,21 @@
 }
 
 [data-platform="instagram"] {
-    border-top-color: transparent;
-    border-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400)) 1;
+    border: transparent;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        height: 4px;
+        background-image: linear-gradient(to right, var(--clr-accent-300), var(--clr-accent-400));
+    }
+}
+
+
+.test::after {
+    
 }
 
 [data-platform="youtube"] {
