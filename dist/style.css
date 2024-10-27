@@ -261,6 +261,12 @@ span {
   --flow-space: var(--space-100);
 }
 
+.theme-toggle {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .dashboard-items {
   --flow-space: var(--space-800);
   --min-item-width: 250px;

@@ -27,3 +27,12 @@
 .tagline {
     --flow-space: var(--space-100);
 }
+
+.theme-toggle {
+    appearance: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
