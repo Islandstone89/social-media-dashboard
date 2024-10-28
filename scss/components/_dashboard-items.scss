@@ -2,16 +2,16 @@
 @use '../globals/utilities' as util;
 
 .dashboard-items {
-    --flow-space: var(--space-800);
+    --flow-space: var(--space-900);
 
     --min-item-width: 250px;
-    --grid-gap: var(--space-300);
+    --grid-gap: var(--space-500);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-item-width)), 1fr));
     gap: var(--grid-gap);
 
     @include util.breakpoint(large) {
-        --grid-gap: var(--space-500);
+        --grid-gap: var(--space-700);
     }
 }
 
@@ -19,13 +19,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-400);
+    gap: var(--space-500);
     border-radius: 5px;
     overflow: hidden;
     border-top-style: solid;
     border-top-width: 4px;
-    padding-block-start: var(--space-600);
-    padding-block-end: var(--space-400);
+    padding-block-start: var(--space-800);
+    padding-block-end: var(--space-500);
     text-align: center;
     background-color: var(--item-bg);
     transition: 150ms ease-in-out;

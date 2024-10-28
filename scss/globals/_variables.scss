@@ -46,6 +46,7 @@
 
     --space-6px: 6px;
     --space-8px: 8px;
+    --space-12px: 12px;
     --space-16px: 16px;
     --space-24px: 24px;
     --space-28px: 28px;
@@ -97,11 +98,12 @@
 
     --space-100: var(--space-6px);
     --space-200: var(--space-8px);
-    --space-300: var(--space-16px);
-    --space-400: var(--space-24px);
-    --space-500: var(--space-28px);
-    --space-600: var(--space-32px);
-    --space-700: var(--space-40px);
-    --space-800: var(--space-48px);
-    --space-900: var(--space-64px);
+    --space-300: var(--space-12px);
+    --space-400: var(--space-16px);
+    --space-500: var(--space-24px);
+    --space-600: var(--space-28px);
+    --space-700: var(--space-32px);
+    --space-800: var(--space-40px);
+    --space-900: var(--space-48px);
+    --space-1000: var(--space-64px);
 }

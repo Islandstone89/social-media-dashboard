@@ -13,9 +13,11 @@
 
 .intro__text {
     border-bottom: 1px solid var(--clr-neutral-500);
+    padding-block-end: var(--space-500);
 
     @include util.breakpoint(large) {
         border-bottom: initial;
+        padding-block-end: initial;
     }
 }
 
@@ -28,8 +30,14 @@
     --flow-space: var(--space-100);
 }
 
+.intro__toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-300);
+}
+
 .theme-toggle {
-    appearance: none;
+    appearance: nones;
 }
 
 
