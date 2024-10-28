@@ -206,8 +206,7 @@ body {
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
 }
-
-body:has(.theme-toggle:checked) {
+body:has(.theme-toggle[data-theme-mode=dark]) {
   --body-bg: var(--clr-neutral-800);
   --text-color1: var(--clr-primary-400);
   --text-color2: var(--clr-primary-100);
@@ -215,16 +214,16 @@ body:has(.theme-toggle:checked) {
   --item-bg-hover: var(--clr-neutral-600);
   --toggle-circle: var(--clr-neutral-500);
 }
-body:has(.theme-toggle:checked) .theme-toggle {
+body:has(.theme-toggle[data-theme-mode=dark]) .theme-toggle {
   background-image: linear-gradient(45deg, var(--clr-accent-600), var(--clr-accent-700));
   transition: all 1s ease-in-out;
 }
-body:has(.theme-toggle:checked) .theme-toggle::after {
+body:has(.theme-toggle[data-theme-mode=dark]) .theme-toggle::after {
   transition: transform 0.25s ease-in-out;
   transform: translateX(140%);
 }
 
-[data-growth=positive] {
+body:has [data-growth=positive] {
   color: var(--clr-primary-200);
 }
 
@@ -322,13 +321,6 @@ span {
   height: 18px;
   border-radius: 50%;
   background-color: var(--toggle-circle);
-}
-@media (prefers-reduced-motion: no-preference) {
-  .theme-toggle::after {
-    animation-name: toggleSlide;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-  }
 }
 
 /* @keyframes toggleSlide {

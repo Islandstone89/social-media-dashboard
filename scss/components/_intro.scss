@@ -69,12 +69,6 @@
     height: 18px;
     border-radius: 50%;
     background-color: var(--toggle-circle);
-
-    @media (prefers-reduced-motion: no-preference) {
-        animation-name: toggleSlide;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
-    }
 }
 
 
