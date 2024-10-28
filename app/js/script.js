@@ -1,10 +1,8 @@
 
-/* let toggleDiv = document.getElementById(".introToggle"); */
 let toggle = document.getElementById("toggle");
-let toggleLabel = document.getElementById("toggleLabel");
 
 
-function toggleSwitch() {
+/* function toggleSwitch() {
     if (toggle.getAttribute("data-theme-mode") === "light") {
         toggle.setAttribute("data-theme-mode", "dark")
     }
@@ -12,7 +10,24 @@ function toggleSwitch() {
     else {
         toggle.setAttribute("data-theme-mode", "light")
     }
+} */
+
+
+
+/* toggle.addEventListener("click", toggleSwitch); */
+
+
+function toggleSwitch2() {
+    if (toggle.getAttribute("aria-checked") === "false") {
+        toggle.setAttribute("aria-checked", "true")
+    }
+
+    else {
+        toggle.setAttribute("aria-checked", "false")
+    }
 }
 
-toggle.addEventListener("click", toggleSwitch);
+
+
+toggle.addEventListener("click", toggleSwitch2);
 

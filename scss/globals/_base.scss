@@ -15,7 +15,7 @@ body {
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
 
-    &:has(.theme-toggle[data-theme-mode="dark"]) {
+    &:has(.theme-toggle[aria-checked="true"]) {
         --body-bg: var(--clr-neutral-800);
         --text-color1: var(--clr-primary-400);
         --text-color2: var(--clr-primary-100);
