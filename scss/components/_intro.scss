@@ -12,7 +12,7 @@
 }
 
 .intro__text {
-    border-bottom: 1px solid var(--clr-neutral-500);
+    border-bottom: 1px solid var(--clr-neutral-600);
     padding-block-end: var(--space-500);
 
     @include util.breakpoint(large) {
@@ -33,11 +33,37 @@
 .intro__toggle {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: var(--space-300);
+
+    @include util.breakpoint(large) {
+        justify-content: initial;
+    }    
 }
 
 .theme-toggle {
-    appearance: nones;
+    appearance: none;
+}
+
+.theme-toggle {
+    position: relative;
+    content: "";
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--toggle-bg);
+}
+
+.theme-toggle::after {
+    position: absolute;
+    inset: 3px;
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--toggle-circle);
 }
 
 
