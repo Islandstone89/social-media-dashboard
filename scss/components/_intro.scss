@@ -41,6 +41,10 @@
     }    
 }
 
+.intro__toggle > * {
+    cursor: pointer;
+}
+
 .theme-toggle {
     appearance: none;
 }
@@ -53,20 +57,33 @@
     height: 24px;
     border-radius: 12px;
     background-color: var(--toggle-bg);
+    transform: translateX(0%);
 }
 
 .theme-toggle::after {
     position: absolute;
-    inset: 3px;
+    inset: 3px 3px 3px 3px;
     content: "";
     display: block;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: var(--toggle-circle);
+
+    @media (prefers-reduced-motion: no-preference) {
+        animation-name: toggleSlide;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-
-}
+/* @keyframes toggleSlide {
+    from {
+        inset: 3px 3px 3px 3px;
+      }
+    
+      to {
+        inset: 3px 10px 3px 55%;
+      }
+} */

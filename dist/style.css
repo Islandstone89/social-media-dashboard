@@ -217,6 +217,11 @@ body:has(.theme-toggle:checked) {
 }
 body:has(.theme-toggle:checked) .theme-toggle {
   background-image: linear-gradient(45deg, var(--clr-accent-600), var(--clr-accent-700));
+  transition: all 1s ease-in-out;
+}
+body:has(.theme-toggle:checked) .theme-toggle::after {
+  transition: transform 0.25s ease-in-out;
+  transform: translateX(140%);
 }
 
 [data-growth=positive] {
@@ -287,6 +292,10 @@ span {
   }
 }
 
+.intro__toggle > * {
+  cursor: pointer;
+}
+
 .theme-toggle {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -301,11 +310,12 @@ span {
   height: 24px;
   border-radius: 12px;
   background-color: var(--toggle-bg);
+  transform: translateX(0%);
 }
 
 .theme-toggle::after {
   position: absolute;
-  inset: 3px;
+  inset: 3px 3px 3px 3px;
   content: "";
   display: block;
   width: 18px;
@@ -313,7 +323,23 @@ span {
   border-radius: 50%;
   background-color: var(--toggle-circle);
 }
+@media (prefers-reduced-motion: no-preference) {
+  .theme-toggle::after {
+    animation-name: toggleSlide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+}
 
+/* @keyframes toggleSlide {
+    from {
+        inset: 3px 3px 3px 3px;
+      }
+
+      to {
+        inset: 3px 10px 3px 55%;
+      }
+} */
 .dashboard-items {
   --flow-space: var(--space-900);
   --min-item-width: 250px;
