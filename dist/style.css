@@ -223,7 +223,7 @@ body:has(.theme-toggle[aria-checked=true]) .theme-toggle::after {
   transform: translateX(140%);
 }
 
-body:has [data-growth=positive] {
+[data-growth=positive] {
   color: var(--clr-primary-200);
 }
 
@@ -323,15 +323,6 @@ span {
   background-color: var(--toggle-circle);
 }
 
-/* @keyframes toggleSlide {
-    from {
-        inset: 3px 3px 3px 3px;
-      }
-
-      to {
-        inset: 3px 10px 3px 55%;
-      }
-} */
 .dashboard-items {
   --flow-space: var(--space-900);
   --min-item-width: 250px;
